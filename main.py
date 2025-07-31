@@ -24,4 +24,20 @@ def cadenaRepetida(cadena,veces,i=0):
 cadenaRepetida("Hola",5)
 
 
+"""
+while numero>1:
+    binario=str(numero%2)+binario
+    numero=numero//2
+print(binario)
+"""
+
+def Binario(numero,nuevoNumero=""):
+    if numero==0:
+        return nuevoNumero
+    else:
+        nuevoNumero=str(numero%2)+nuevoNumero
+        return Binario(numero//2,nuevoNumero)
+
+print(Binario(125))
+
 
