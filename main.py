@@ -6,7 +6,6 @@ def contarLetras(cadena,letra):
     else:
         return contarLetras(cadena[1:],letra)
 print(contarLetras("abracadabra","a"))
-
 def contarDigitos(numero):
     if numero==0:
         return 0
@@ -14,6 +13,15 @@ def contarDigitos(numero):
         return 1 + contarDigitos(numero//10)
     else:
         return 1 + contarDigitos(numero//10)
-
 print(contarDigitos(1234567))
+
+def cadenaRepetida(cadena,veces,i=0):
+    if veces==i:
+        return ""
+    else:
+        print(f"{cadena}")
+        return cadenaRepetida(cadena,veces,i+1)
+cadenaRepetida("Hola",5)
+
+
 
