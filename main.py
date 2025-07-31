@@ -40,4 +40,20 @@ def Binario(numero,nuevoNumero=""):
 
 print(Binario(125))
 
+def mcd(a,b):
+    if a%b==0:
+        return a
+    else:
+        return mcd(b,b//a)
+
+def MCD(a,b,i=1,m=1):
+    if i>a or i>b:
+        return m
+    if a%i==0 and b%i==0:
+        m=i
+    return MCD(a,b,i+1,m)
+while True:
+    print("==MENU==")
+    print("1. Calcular MCD")
+
 
